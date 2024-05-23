@@ -130,29 +130,24 @@ const Sidebar = () => {
               color={colors.grey[300]}
               sx={{ m: "15px 0 5px 20px" }}
             >
-              Data
+              Admin
             </Typography>
             <Item
-              title="Editar Usuarios "
+              title="Usuarios "
               to="/team"
               icon={<PeopleOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
+
             <Item
-              title="Informação Alunos"
-              to="/contacts"
-              icon={<ContactsOutlinedIcon />}
+              title="Adicionar Usuario"
+              to="/form"
+              icon={<PersonOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
-            <Item
-              title="Disciplinas"
-              to="/subjects"
-              icon={<ContactsOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-              />
+             
             <Item
               title="Matricula Alunos"
               to="/invoices"
@@ -168,13 +163,7 @@ const Sidebar = () => {
             >
               Pages
             </Typography>
-            <Item
-              title="Adicionar Usuario"
-              to="/form"
-              icon={<PersonOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
+            
             <Item
               title="Calendar ICQL"
               to="/calendar"
@@ -182,10 +171,82 @@ const Sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
+                   
             <Item
               title="Feed CQL"
               to="/faq"
               icon={<HelpOutlineOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Typography
+              variant="h6"
+              color={colors.grey[300]}
+              sx={{ m: "15px 0 5px 20px" }}
+            >
+              Professores
+            </Typography>
+
+            <Item
+              title="Professor"
+              to="/dashboard"
+              icon={<CalendarTodayOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+
+             <Item
+              title="Informação Alunos"
+              to="/contacts"
+              icon={<ContactsOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+
+            <Typography
+              variant="h6"
+              color={colors.grey[300]}
+              sx={{ m: "15px 0 5px 20px" }}
+            >
+              Secretaria
+            </Typography>
+
+            <Item
+              title="Turmas"
+              to="/turms"
+              icon={<ContactsOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            
+            <Item
+              title="Disciplinas"
+              to="/subjects"
+              icon={<ContactsOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+              />
+
+               <Item
+              title="Matriculas"
+              to="/enrollments"
+              icon={<ContactsOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+
+            <Typography
+              variant="h6"
+              color={colors.grey[300]}
+              sx={{ m: "15px 0 5px 20px" }}
+            >
+              Tesouraria
+            </Typography>
+
+            <Item
+              title="Mensalidades"
+              to="/fees"
+              icon={<CalendarTodayOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />

@@ -154,6 +154,11 @@ export const mockDataInvoices = [
   },
 ];
 
+export const mockDataClasses = [
+  { id: 1, subject: "Matemática", room: "101", teacher: "Prof. João", schedule: "08:00 - 10:00", days: "Segunda, Quarta" },
+  { id: 2, subject: "História", room: "102", teacher: "Prof. Maria", schedule: "10:00 - 12:00", days: "Terça, Quinta" },
+];
+
 export const mockTransactions = [
   {
     txId: "01e4dsa",
@@ -203,6 +208,115 @@ export const mockTransactions = [
     date: "2022-04-01",
     cost: "133.45",
   },
+];
+
+export const mockDataEnrollments = [
+  {
+    id: 1,
+    name: "João Silva",
+    phone: "(11) 1234-5678",
+    email: "joao.silva@example.com",
+    cpf: "123.456.789-00",
+    age: 20,
+    rede: "Public",
+    subject: "Matemática",
+    days: "Segunda, Quarta, Sexta",
+    schedule: "08:00 - 10:00",
+  },
+  {
+    id: 2,
+    name: "Maria Oliveira",
+    phone: "(11) 8765-4321",
+    email: "maria.oliveira@example.com",
+    cpf: "987.654.321-00",
+    age: 22,
+    rede: "Private",
+    subject: "História",
+    days: "Terça, Quinta",
+    schedule: "10:00 - 12:00",
+  },
+];
+
+export const mockDataFees = [
+  {
+    id: 1,
+    student: "João Silva",
+    cpf: "123.456.789-00",
+    subject: "Matemática",
+    amount: 200.0,
+    dueDate: "2023-06-30",
+  },
+  {
+    id: 2,
+    student: "Maria Oliveira",
+    cpf: "987.654.321-00",
+    subject: "História",
+    amount: 180.0,
+    dueDate: "2023-06-25",
+  },
+  {
+    id: 3,
+    student: "Carlos Souza",
+    cpf: "321.654.987-00",
+    subject: "Física",
+    amount: 210.0,
+    dueDate: "2023-07-05",
+  },
+  {
+    id: 4,
+    student: "Ana Costa",
+    cpf: "654.321.987-00",
+    subject: "Química",
+    amount: 220.0,
+    dueDate: "2023-07-01",
+  },
+  {
+    id: 5,
+    student: "Pedro Pereira",
+    cpf: "789.123.456-00",
+    subject: "Biologia",
+    amount: 190.0,
+    dueDate: "2023-06-28",
+  },
+  {
+    id: 6,
+    student: "Laura Martins",
+    cpf: "456.789.123-00",
+    subject: "Geografia",
+    amount: 195.0,
+    dueDate: "2023-07-03",
+  },
+];
+
+export const mockTeacherSubjects = [
+  {
+    id: 1,
+    subject: "Matemática",
+    completed: "Não",
+    days: "Segunda, Quarta, Sexta",
+    time: "10:00 - 12:00",
+    startYear: 2023,
+    endDate: "2023-12-15",
+  },
+  {
+    id: 2,
+    subject: "História",
+    completed: "Sim",
+    days: "Terça, Quinta",
+    time: "14:00 - 16:00",
+    startYear: 2022,
+    endDate: "2023-06-30",
+  },
+  {
+    id: 3,
+    subject: "Física",
+    completed: "Não",
+    days: "Segunda, Quarta",
+    time: "08:00 - 10:00",
+    startYear: 2023,
+    endDate: "2024-05-30",
+  },
+  // Adicione mais dados conforme necessário
 ];
 
 export const mockBarData = [
