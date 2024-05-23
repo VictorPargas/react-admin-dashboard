@@ -2,13 +2,14 @@ import { Box, Button, IconButton, Typography, useTheme } from "@mui/material";
 import { tokens } from "../../theme";
 import { mockTransactions } from "../../data/mockData";
 import DownloadOutlinedIcon from "@mui/icons-material/DownloadOutlined";
-import EmailIcon from "@mui/icons-material/Email";
-import PointOfSaleIcon from "@mui/icons-material/PointOfSale";
-import PersonAddIcon from "@mui/icons-material/PersonAdd";
-import TrafficIcon from "@mui/icons-material/Traffic";
+import SchoolIcon from "@mui/icons-material/School";
+import GroupIcon from "@mui/icons-material/Group";
+import ClassIcon from "@mui/icons-material/Class";
+import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
+import AccountBalanceWalletIcon from "@mui/icons-material/AccountBalanceWallet";
+import HighlightOffIcon from "@mui/icons-material/HighlightOff";
 import Header from "../../components/Header";
 import LineChart from "../../components/LineChart";
-import GeographyChart from "../../components/GeographyChart";
 import BarChart from "../../components/BarChart";
 import StatBox from "../../components/StatBox";
 import ProgressCircle from "../../components/ProgressCircle";
@@ -21,7 +22,7 @@ const Dashboard = () => {
     <Box m="20px">
       {/* HEADER */}
       <Box display="flex" justifyContent="space-between" alignItems="center">
-        <Header title="DASHBOARD" subtitle="Bem vindo a ICQL Web" />
+        <Header title="DASHBOARD" subtitle="Bem vindo ao painel do Administrador" />
 
         <Box>
           <Button
@@ -55,12 +56,12 @@ const Dashboard = () => {
           justifyContent="center"
         >
           <StatBox
-            title="12,361"
-            subtitle="Matriculas Pendentes"
-            progress="0.75"
-            increase="+14%"
+            title="R$ 25,000"
+            subtitle="Saldo do Mês"
+            progress="0.90"
+            increase="+10%"
             icon={
-              <EmailIcon
+              <AccountBalanceWalletIcon
                 sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
               />
             }
@@ -74,31 +75,12 @@ const Dashboard = () => {
           justifyContent="center"
         >
           <StatBox
-            title="431,225"
-            subtitle="Matriculas Conclúidas"
-            progress="0.50"
-            increase="+21%"
-            icon={
-              <PointOfSaleIcon
-                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
-              />
-            }
-          />
-        </Box>
-        <Box
-          gridColumn="span 3"
-          backgroundColor={colors.primary[400]}
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
-        >
-          <StatBox
-            title="32,441"
-            subtitle="Novos Alunos"
-            progress="0.30"
+            title="R$ 15,000"
+            subtitle="Total a Vencer"
+            progress="0.60"
             increase="+5%"
             icon={
-              <PersonAddIcon
+              <AttachMoneyIcon
                 sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
               />
             }
@@ -112,12 +94,31 @@ const Dashboard = () => {
           justifyContent="center"
         >
           <StatBox
-            title="1,325,134"
-            subtitle="Frequencia Escolar"
+            title="50"
+            subtitle="Total de Turmas"
             progress="0.80"
-            increase="+43%"
+            increase="+8%"
             icon={
-              <TrafficIcon
+              <ClassIcon
+                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+              />
+            }
+          />
+        </Box>
+        <Box
+          gridColumn="span 3"
+          backgroundColor={colors.primary[400]}
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+        >
+          <StatBox
+            title="R$ 5,000"
+            subtitle="Entradas do Dia"
+            progress="0.70"
+            increase="+12%"
+            icon={
+              <AttachMoneyIcon
                 sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
               />
             }
@@ -126,7 +127,125 @@ const Dashboard = () => {
 
         {/* ROW 2 */}
         <Box
-          gridColumn="span 8"
+          gridColumn="span 3"
+          backgroundColor={colors.primary[400]}
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+        >
+          <StatBox
+            title="R$ 2,000"
+            subtitle="Saídas do Dia"
+            progress="0.30"
+            increase="-5%"
+            icon={
+              <HighlightOffIcon
+                sx={{ color: colors.redAccent[600], fontSize: "26px" }}
+              />
+            }
+          />
+        </Box>
+        <Box
+          gridColumn="span 3"
+          backgroundColor={colors.primary[400]}
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+        >
+          <StatBox
+            title="10%"
+            subtitle="Inadimplência"
+            progress="0.10"
+            increase="+2%"
+            icon={
+              <HighlightOffIcon
+                sx={{ color: colors.redAccent[600], fontSize: "26px" }}
+              />
+            }
+          />
+        </Box>
+        <Box
+          gridColumn="span 3"
+          backgroundColor={colors.primary[400]}
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+        >
+          <StatBox
+            title="20"
+            subtitle="Alunos Inadimplentes"
+            progress="0.20"
+            increase="+3%"
+            icon={
+              <HighlightOffIcon
+                sx={{ color: colors.redAccent[600], fontSize: "26px" }}
+              />
+            }
+          />
+        </Box>
+        <Box
+          gridColumn="span 3"
+          backgroundColor={colors.primary[400]}
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+        >
+          <StatBox
+            title="200"
+            subtitle="Alunos Cadastrados"
+            progress="0.50"
+            increase="+10%"
+            icon={
+              <GroupIcon
+                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+              />
+            }
+          />
+        </Box>
+
+        {/* ROW 3 */}
+        <Box
+          gridColumn="span 3"
+          backgroundColor={colors.primary[400]}
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+        >
+          <StatBox
+            title="25"
+            subtitle="Total de Professores"
+            progress="0.75"
+            increase="+5%"
+            icon={
+              <SchoolIcon
+                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+              />
+            }
+          />
+        </Box>
+        <Box
+          gridColumn="span 3"
+          backgroundColor={colors.primary[400]}
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+        >
+          <StatBox
+            title="30"
+            subtitle="Total de Disciplinas"
+            progress="0.60"
+            increase="+8%"
+            icon={
+              <ClassIcon
+                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+              />
+            }
+          />
+        </Box>
+
+        {/* CHARTS */}
+        <Box
+          gridColumn="span 6"
           gridRow="span 2"
           backgroundColor={colors.primary[400]}
         >
@@ -166,7 +285,7 @@ const Dashboard = () => {
           </Box>
         </Box>
         <Box
-          gridColumn="span 4"
+          gridColumn="span 6"
           gridRow="span 2"
           backgroundColor={colors.primary[400]}
           overflow="auto"
@@ -216,9 +335,8 @@ const Dashboard = () => {
           ))}
         </Box>
 
-        {/* ROW 3 */}
         <Box
-          gridColumn="span 4"
+          gridColumn="span 6"
           gridRow="span 2"
           backgroundColor={colors.primary[400]}
           p="30px"
@@ -244,7 +362,7 @@ const Dashboard = () => {
           </Box>
         </Box>
         <Box
-          gridColumn="span 4"
+          gridColumn="span 6"
           gridRow="span 2"
           backgroundColor={colors.primary[400]}
         >
@@ -257,23 +375,6 @@ const Dashboard = () => {
           </Typography>
           <Box height="250px" mt="-20px">
             <BarChart isDashboard={true} />
-          </Box>
-        </Box>
-        <Box
-          gridColumn="span 4"
-          gridRow="span 2"
-          backgroundColor={colors.primary[400]}
-          padding="30px"
-        >
-          <Typography
-            variant="h5"
-            fontWeight="600"
-            sx={{ marginBottom: "15px" }}
-          >
-            Mapa Baseado Região Alunos
-          </Typography>
-          <Box height="200px">
-            <GeographyChart isDashboard={true} />
           </Box>
         </Box>
       </Box>

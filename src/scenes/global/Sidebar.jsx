@@ -147,6 +147,13 @@ const Sidebar = () => {
               setSelected={setSelected}
             />
             <Item
+              title="Disciplinas"
+              to="/subjects"
+              icon={<ContactsOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+              />
+            <Item
               title="Matricula Alunos"
               to="/invoices"
               icon={<ReceiptOutlinedIcon />}

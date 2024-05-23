@@ -43,6 +43,11 @@ export const mockDataTeam = [
   },
 ];
 
+export const mockDataSubjects = [
+  { id: 1, subjectCode: "MAT101", name: "Matemática", teacher: "Prof. João", credits: 4, semester: "2024/1" },
+  { id: 2, subjectCode: "HIS102", name: "História", teacher: "Prof. Maria", credits: 3, semester: "2024/1" },
+];
+
 export const mockDataContacts = [
   {
     id: 12,
@@ -53,6 +58,7 @@ export const mockDataContacts = [
     address: "Rua das Flores, 123",
     city: "São Paulo",
     zipCode: "01234-567",
+    rede: "Hadash",
     registrarId: 789012,
   },
   {
@@ -64,6 +70,7 @@ export const mockDataContacts = [
     address: "Avenida Principal, 456",
     city: "Rio de Janeiro",
     zipCode: "20000-123",
+    rede: "Vinho Novo",
     registrarId: 890123,
   },
   {
@@ -75,6 +82,7 @@ export const mockDataContacts = [
     address: "Rua do Bosque, 789",
     city: "Belo Horizonte",
     zipCode: "30000-456",
+    rede: "Amor Maior",
     registrarId: 901234,
   },
   {
@@ -86,6 +94,7 @@ export const mockDataContacts = [
     address: "Travessa da Praia, 101",
     city: "Florianópolis",
     zipCode: "40000-789",
+    rede: "Tetelestai",
     registrarId: 912345,
   },
   {
@@ -97,6 +106,7 @@ export const mockDataContacts = [
     address: "Avenida dos Coqueiros, 202",
     city: "Porto Alegre",
     zipCode: "50000-234",
+    rede: "Sangar",
     registrarId: 923456,
   },
 ];
