@@ -19,9 +19,9 @@ const Team = () => {
       cellClassName: "name-column--cell",
     },
     {
-      field: "age",
-      headerName: "Idade",
-      type: "number",
+      field: "rede",
+      headerName: "Rede",
+      type: "string",
       headerAlign: "left",
       align: "left",
     },
@@ -70,7 +70,7 @@ const Team = () => {
 
   return (
     <Box m="20px">
-      <Header title="TEAM" subtitle="Managing the Team Members" />
+      <Header title="EQUIPE CQL" subtitle="Lista de Usuários utilizando o portal" />
       <Box
         m="40px 0 0 0"
         height="75vh"

@@ -5,7 +5,7 @@ export const mockDataTeam = [
     id: 1,
     name: "Yasmin Rodrigues",
     email: "yasmin@gmail.com",
-    age: 35,
+    rede: "Hadash",
     phone: "(665)121-5454",
     access: "supervisor",
   },
@@ -13,7 +13,7 @@ export const mockDataTeam = [
     id: 2,
     name: "Hairine Marques",
     email: "hairinecql@gmail.com",
-    age: 42,
+    rede: "Hadash",
     phone: "(421)314-2288",
     access: "manager",
   },
@@ -21,7 +21,7 @@ export const mockDataTeam = [
     id: 3,
     name: "teste Santos",
     email: "teste@gmail.com",
-    age: 45,
+    rede: "Hadash",
     phone: "(422)982-6739",
     access: "user",
   },
@@ -29,7 +29,7 @@ export const mockDataTeam = [
     id: 4,
     name: "Ana Kokura",
     email: "anakoks@gmail.com",
-    age: 16,
+    rede: "Hadash",
     phone: "(921)425-6742",
     access: "admin",
   },
@@ -37,10 +37,19 @@ export const mockDataTeam = [
     id: 5,
     name: "Rene Geribola",
     email: "renegeri@gmail.com",
-    age: 31,
+    rede: "Hadash",
     phone: "(421)445-1189",
     access: "user",
   },
+];
+
+export const mockDataStudents = [
+  { id: 1, name: 'João' },
+  { id: 2, name: 'Maria' },
+  { id: 3, name: 'Pedro' },
+  { id: 4, name: 'Ana' },
+  { id: 5, name: 'Carlos' },
+  // Adicione mais alunos conforme necessário
 ];
 
 export const mockDataSubjects = [
